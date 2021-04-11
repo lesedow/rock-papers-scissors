@@ -3,9 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Rock Paper Scissors</title>
 </head>
 <body>
-	<script type="text/javascript" src="app.js"></script>
+
+	<!-- Main Menu Section -->
+
+	<div id="menu" class="menu-wrapper flex">
+		<div class="menu-elements flex">
+			<div class="title-container">
+				<h1 class="title">Rock Paper Scissors</h1>
+				<p class="menu-text">by lesedow</p>
+			</div>
+			<button id="play" class="play-btn btn">Play</button>
+		</div>
+	</div>
+
+	<!-- Game Section -->
+	<div id="game" class="game-wrapper">
+		<div class="score-container">
+			<h2 class="score" id="score">0 : 0</h2>
+			<p class="logs" id="logs"></p>
+		</div>
+		<div class="choices-container flex">
+			<button id="rock" class="btn rock">
+				Rock
+			</button>
+			<button id="paper" class="btn paper">
+				Paper
+			</button>
+			<button id="scissors" class="btn scissors">
+				Scissors
+			</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

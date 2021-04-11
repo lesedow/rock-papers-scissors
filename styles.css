@@ -1,0 +1,163 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+/* Variables */
+:root {
+	--normal-font-size: 10px;
+	--montserrat: 'Montserrat', sans-serif;
+	--btn-color: #00137f;
+}
+
+/* Global Styles */
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: var(--normal-font-size);
+}
+
+body {
+	line-height: 1.5;
+	font-family: var(--montserrat);
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+p {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+img	{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.btn {
+	padding: 1rem 2rem;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	border: none;
+	background-color: var(--btn-color);
+	color: white;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+/* Main Styles */
+.menu-wrapper {
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+
+.menu-elements {
+	text-align: center;
+	height: 100%;
+	flex-direction: column;
+	padding-top: 15rem;
+}
+
+.title-container, .play-btn {
+	margin: 5rem 0;
+}
+
+.play-btn {
+	width: 75%;
+	margin: 0 auto;
+	padding: 2rem 4rem;
+	border: 2px solid var(--btn-color);
+	background-color: transparent;
+	color: var(--btn-color);
+	border-radius: 4rem;
+	font-weight: 400;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	outline: none;
+}
+
+.play-btn:hover {
+	color: white;
+	background-color: var(--btn-color);
+}
+
+.game-wrapper {
+	height: 100vh;
+	display: none;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.choices-container {
+	width: 100%;
+	flex-direction: column;
+}
+
+.score-container {
+	margin-bottom: 5rem;
+}
+
+.rock, .paper, .scissors {
+	width: 30%;
+	margin: 1rem auto;
+	padding: 2rem 4rem;
+	border: 2px solid var(--btn-color);
+	background-color: transparent;
+	color: var(--btn-color);
+	border-radius: 4rem;
+	font-weight: 400;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	outline: none;
+}
+
+.rock:hover, .paper:hover, .scissors:hover {
+	color: white;
+	background-color: var(--btn-color);
+}
+
+@media (max-width: 640px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	.play-btn {
+		width: 100%;
+		font-size: 2rem;
+	}
+
+	.score {
+		font-size: 5rem;
+	}
+
+	.logs {
+		font-size: 1.8rem;
+	}
+
+	.rock, .paper, .scissors {
+		width: 90%;
+		font-size: 2rem;
+	}
+}
+
+
+/* Utilities */
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
